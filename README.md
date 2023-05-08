@@ -1,6 +1,14 @@
 # Description
 
-This repository is meant to serve as a general template for how to set up new repositories in the JogetOSS organization. 
+Hash variable type plugin which allows to format numbers.
+
+## Available Formats
+* #formatNumber.34567#  -> returns 34567
+* #formatNumber.{form.number_format.amount} -> return the value of form.number_format.amount field
+* #formatNumber.12345[decimal=2]# -> returns 12345.00
+* #formatNumber.12345[decimal=2&thousandSeparator=,]# -> returns 12,345.00
+* #formatNumber.{form.number_format.amount}[decimal=2]# -> returns the values with 2 decimal places
+* #formatNumber.{form.number_format.amount}[decimal=2&thousandSeparator=,]# -> returns the values with 2 decimal places with thousand separator
 
 # Getting Help
 
